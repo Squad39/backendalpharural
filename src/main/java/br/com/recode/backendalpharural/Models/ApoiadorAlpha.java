@@ -12,7 +12,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "colaboradores")
+@Table(name = "apoiadores")
 @Getter
 @Setter
 public class ApoiadorAlpha {
@@ -20,6 +20,8 @@ public class ApoiadorAlpha {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigoApoiador;
+
+    private String nome;
 
     private String formacao;
 
